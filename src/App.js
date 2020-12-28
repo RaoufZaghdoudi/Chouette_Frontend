@@ -7,6 +7,7 @@ const App=()=> {
   return (
     <div>
       <Header/>
+      <h1>Hello Github</h1>
       <Body/>
     </div>
   );
