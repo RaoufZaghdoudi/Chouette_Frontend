@@ -1,0 +1,58 @@
+.top-buffer2 {
+    margin-top: 15px;
+}
+
+#dropdownMenuButtonWhite {
+    background-color: #fff;
+    border: 0;
+    opacity: 1;
+}
+
+.dropdown-menu {
+    width: 400px !important;
+    height: 470px !important;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 10px #000000AB;
+    border-radius: 19px;
+    opacity: 1;
+}
+
+.form-text {
+    text-align: left;
+    font: normal normal normal 10px/14px Roboto;
+    letter-spacing: 0.4px;
+    color: #00000099;
+    opacity: 1;
+}
+
+.form-control {
+    text-align: left;
+    font: normal normal normal 12px/20px Roboto;
+    letter-spacing: 0.15px;
+    color: #00000099;
+    background-color: #F4F4F4;
+    opacity: 1;
+}
+
+.form-control-center {
+    text-align: center;
+}
+
+.form-control-message {
+    height: 200px;
+    width: 330px;
+    overflow-y: scroll;
+    resize: none;
+    display: block;
+}
+
+#inline-button-div {
+    display: inline-block;
+    position: relative;
+}
+
+#inline-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

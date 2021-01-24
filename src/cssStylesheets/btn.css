@@ -1,0 +1,94 @@
+.btn-filter.btn-sm{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    height:30px;
+    color:#009D6D;
+    border-color: #e3e3e3;
+}
+
+.btn-filter.btn-sm:active:focus{
+    box-shadow:none;
+    background-color: #b4d1c8;
+}
+
+.btn-filter.btn-sm:focus{
+    box-shadow:none;
+}
+
+.btn-filterAttribute.btn-md{
+    color: black;
+    background-color: white;
+    border-radius: 0px;
+    width:150px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.btn-filterAttribute.btn-md:active:focus{
+    box-shadow: 0 0 0 2px #999999;
+}
+
+.btn-filterAttribute.btn-md:focus{
+    box-shadow: none;
+}
+
+.dropdown-item:active:focus{
+    color:black;
+    background-color:#d3d3d3;
+}
+
+.breadcrumb{
+    height:40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.breadcrumb-item{
+    font-size:15px;
+    content:none;
+}
+
+.filter-breadcrumb .breadcrumb-item+.breadcrumb-item::before{
+    content:none;
+}
+
+.btn-delete-filter{
+    margin-top:5px;
+    border-color: #d3d3d3;
+}
+
+.btn-delete-filter:active:focus{
+    background-color:#e7b1b1;
+    box-shadow:none;
+}
+
+.btn-delete-filter:focus{
+    box-shadow:none;
+}
+
+.btn-delete-one-filter{
+    height:10px;
+    width:10px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 4px;
+}
+
+.btn-delete-one-filter:active:focus{
+    box-shadow:none;
+}
+
+.btn-delete-one-filter:focus{
+    box-shadow:none;
+}
+
+.delete-icon{
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+}

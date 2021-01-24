@@ -1,0 +1,13 @@
+.btn-bibtex.btn-xs{
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:5px;
+    margin-right:5px;
+    border-radius: 0px;
+}
+.btn-bibtex.btn-xs:active:focus{
+    box-shadow: 0 0 0 2px #999999;
+}
+.btn-bibtex.btn-xs:focus{
+    box-shadow:none;
+}

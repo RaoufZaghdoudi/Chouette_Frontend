@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
+import PublicationListView from './Views/PublicationListView';
 
 
-
-const App=()=> {
+const App = () => {
   return (
-    <div>Hello Github</div>
+    <PublicationListView />
   );
 }
 
