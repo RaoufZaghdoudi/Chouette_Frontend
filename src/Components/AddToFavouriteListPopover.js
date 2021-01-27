@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from "prop-types";
-import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import IconButton from "@material-ui/core/IconButton";
 import Popover from '@material-ui/core/Popover';
-import Typography from '@material-ui/core/Typography';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import AddToFavouriteList from './AddToFavoriteList';
 
@@ -29,7 +27,6 @@ const useStyles = makeStyles((theme) => ({
     height: 361, 
     borderRadius: 40
   }
-  
 }));
 
 export default function AddToFavouriteListPopover() {

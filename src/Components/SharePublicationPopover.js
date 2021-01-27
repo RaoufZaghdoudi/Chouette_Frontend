@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from "prop-types";
-import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import IconButton from "@material-ui/core/IconButton";
 import Popover from '@material-ui/core/Popover';
-import Typography from '@material-ui/core/Typography';
 import ShareIcon from '@material-ui/icons/Share';
 import '../cssStylesheets/sharePublication.css';
 import SharePublication from './SharePublication'

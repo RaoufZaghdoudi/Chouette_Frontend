@@ -1,26 +1,12 @@
-import React, { useEffect, useState } from "react";
-import Divider from '@material-ui/core/Divider';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
+import React from "react";
 import PublicationList from '../Components/PublicationList';
-import Typography from '@material-ui/core/Typography';
-import {Image, Row, Card, Container} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../cssStylesheets/btn.css'
+import SearchAppBar from "../Components/Navbar";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '100%',
-    backgroundColor: theme.palette.background.paper,
-  },
-  inline: {
-    display: 'inline',
-  }
-  
-}));
 
 function PublicationListView() {
-  const classes = useStyles();
-  //const [data, setData] = useState([]);
+  
   const publications = [
     {
         id : 1,
@@ -112,45 +98,37 @@ function PublicationListView() {
         year: 2018,
         school: undefined,
         keywords: ["aaa","bbb","dssdf"]
+    },
+    {
+        id : 10,
+        author : "Max Mustermann",
+        title : "Lorem ipsum dolo sit amet, consecutor adipiscing 9",
+        month:2,
+        type: "Proceeding",
+        year: 2018,
+        school: undefined,
+        keywords: ["aaa","bbb","dssdf"]
+    },
+    {
+        id : 11,
+        author : "Max Mustermann",
+        title : "Lorem ipsum dolo sit amet, consecutor adipiscing 9",
+        month:2,
+        type: "Proceeding",
+        year: 2018,
+        school: undefined,
+        keywords: ["aaa","ccc"]
     }
   ]
 
-  //useEffect(() => {
-  //axios
-  //  .get(URL)
-  //  .then(result => setData(result.data));
-  //}, []);
-
   return (
     <React.Fragment>
-      <PublicationList searched="all" publications={publications} /> 
+      <div><SearchAppBar/></div>
+      <div style={{backgroundColor:'#F0F0F0',paddingRight:60,paddingLeft:60,paddingTop:40,paddingBottom:20}}>
+       <PublicationList searched="all" />
+      </div>
     </React.Fragment>
   );
-}
-
-const dropdownStyle={
-  height:'auto',
-  maxHeight:'200px',
-  overflowX:'hidden',
-}
-const filterStyle={
-  backgroundColor: '#F0F0F0',
-  paddingTop: '10px',
-  paddingBottom: '10px',
-  marginBottom: '10px',
-}
-const headlineStyle={
-  lineHeight:'50px',
-  textAlign: 'left',
-  font: 'normal normal 300 34px/50px Roboto',
-  letterSpacing: '3.03px',
-  color: '#333333',
-  opacity: '1',
-  textDecoration: 'none',
-}
-const headerStyle={
-  height: '50px',
-  borderBottom: '2px solid #737373',
 }
 
 export default PublicationListView;

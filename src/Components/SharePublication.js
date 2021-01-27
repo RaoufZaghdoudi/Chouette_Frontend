@@ -1,17 +1,11 @@
 import React , { useState, useEffect }from 'react';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { makeStyles} from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import '../cssStylesheets/btn.css'
-import { green } from '@material-ui/core/colors';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
-import ListItemText from '@material-ui/core/ListItemText';
-import { Divider, IconButton, ListSubheader } from '@material-ui/core';
+import {IconButton} from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 import '../cssStylesheets/btn.css'
 import AddIcon from '@material-ui/icons/Add';
-import { Button } from 'bootstrap';
 import SendIcon from '@material-ui/icons/Send';
 
 
@@ -94,6 +88,9 @@ export default function SharePublication() {
                    defaultValue="https://livewasys.de/pub?id=123456"
                    helperText="Als Link teilen"
                    variant="outlined"
+                   inputProps={
+                    { readOnly: true }
+                  }
                 />       
             </form>
       </div>   
